@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image" href="https://cdn.discordapp.com/attachments/826834529435648000/987050809185419334/avatar.png">
+    <title>❓Quiz_Game❓</title>
+</head>
+<body>
+    <div class="container" style="margin-top: 5%;">
+    <h1> <b>ສະບາຍດີ!</b> <i class="fa-solid fa-hand"></i> </h1> </i>
+    <p style="font-size: 15pt ;"> - ກ່ອນທີ່ຈະຮູ້ຈັກກັນ ເຮົາມາຫຼີ້ນເກມງ່າຍໆ ຈັກເກມກ່ອນ. <br> - ນັ້ນກໍຄືການຖອດລະຫັດ <b style="color:rgb(255, 0, 0) ;">"Binary"</b> ເຊິ່ງເຈົ້າໜ້າຈະເຄີຍຮຽນມາກ່ອນແລ້ວ ຫຼັງຈາກນັ້ນໃສ່ຄຳຕອບທີ່ຖືກຕ້ອງລົງໄປໃນ "ບ່ອນໃສ່ຄຳຕອບ".</p>
+    
+    <div style="border-radius: 15px; background-color: #21252B; font-size: 25pt; text-align: center;" >
+
+        <b style="color: rgb(255, 0, 0);">01100001</b>
+        <b style="color: rgb(255, 174, 0);">01110111</b>
+        <br>
+        <b style="color: rgb(241, 237, 0);">01100101</b>
+        <b style="color: rgb(0, 214, 21);">01110011</b>
+        <br>
+        <b style="color: rgb(0, 242, 255);">01101111</b>
+        <b style="color: rgb(51, 0, 255);">01101101</b>
+        <br>
+        <b style="color: rgb(183, 0, 255);">01100101</b>
+            </div>
+
+
+            <div class="collapse" id="collapseExample" >
+              <div class="card card-body" style="background-color:#21252B ; margin-right: ;">
+                  <p style="font-size: 10pt ; color: rgb(241, 201, 0);"> - ວິທີທີ່1: ຖ້າເຮັດບໍ່ເປັນ ສາມາດເບິ່ງຄິບສອນການອ່ານ Binary code ໄດ້ <a href="https://www.youtube.com/watch?v=wCQSIub_g7M&t=1s" style="font-size: 10pt; color: rgb(0, 255, 68);" target="_blank"> ທີ່ນີ້>> </a> <i class="fa-solid fa-hand-point-left"></i> </p>
+                  <p style="font-size: 10pt ; color: rgb(241, 201, 0);"> - ວິທີທີ່2: ໄປທີ່ເວັບໄຊນີ້ແລ້ວແປງຈາກລະຫັດ Binary ເປັນ Text ໄດ້ <a href="https://www.rapidtables.com/convert/number/binary-to-ascii.html" style="font-size: 10pt; color: rgb(0, 255, 68);" target="_blank"> ທີ່ນີ້>></a> <i class="fa-solid fa-hand-point-left"></i></p>
+                  <p style="font-size: 10pt ; color: rgb(241, 201, 0);"> - ວິທີທີ່3: ລອງກົດ F12 ເບິ່ງອາດມີຄວາມລັບຢູ່😆</p>
+              </div>
+            </div>   
+
+
+
+
+            <p style="margin-top: 2%; font-size: 20pt;">ບ່ອນໃສ່ຄຳຕອບ:</p>
+    
+            <p id="false_answer" style="font-size: 15pt ; color: #ff0000;"> </p>
+            <div class="input-group mb-3" style="margin-top: 2% ;">
+                <input type="text" class="form-control" placeholder="ໃສ່ຄຳຕອບທີ່ຖືກຕ້ອງ" aria-describedby="basic-addon2" id="inputbtn" style="background-color: rgb(176, 209, 255);">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-light" type="button" onclick="checkanswer()">ສົ່ງຄຳຕອບ></button>
+                </div>
+              </div>
+
+              <hr style="background-color:rgb(143, 143, 143) ; margin-top: 5%;">
+
+
+              <p style="margin-top: 2% ; text-align: right;">
+                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color: rgb(241, 201, 0); font-size: 15pt;">
+                    ⚠️ຊ່ວຍເຫຼື່ອ>>
+                </a>
+              </p>    
+      </div>
+
+    <script>
+        var input=document.getElementById("inputbtn")
+        var false_anw=document.getElementById("false_answer")
+
+
+
+
+//_______________________________________________________________________________
+//👍👍 ເກັ່ງຫຼາຍ ~~ ທີ່ຮູ້ວິທີເບິ່ງຄຳຕອບດ້ວຍວິທີນີ້ ~ ແມ່ນແລ້ວຄຳຕອບໄດ້ຖືກຝັ່ງໃວ້ໃນ Code ນີ້ເລີຍ 👍👍
+        var answer_ev1="Awesome"
+        var answer_ev2="awesome"
+        var answer_ev3="AWESOME"
+//_______________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function checkanswer(){
+          
+             if(input.value==answer_ev1 || input.value==answer_ev2 || input.value==answer_ev3){
+
+
+//_______________________________________________________________________________
+//👍👍 ເປັນຫຍັງຕ້ອງຫາຄຳຕອບ ໃນເມື່ອມັນມີລິ່ງກົດຂ້າມໜ້ານີ້ ຢູ່ແລ້ວ ກະກົດເລີຍ 👇👇
+               location.href='https://peppy-haupia-663740.netlify.app/';
+//_______________________________________________________________________________
+
+
+
+             }else if (input.value==""){
+              false_anw.innerText="ເຈົ້າຍັງບໍ່ທັນໃສ່ຄຳຕອບ ❌"
+             }else {
+               false_anw.innerText="ຄຳຕອບຜິດ ❌"
+             }
+        }
+        
+        
+
+
+    </script>
+</body>
+</html>
